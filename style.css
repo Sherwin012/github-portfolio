@@ -77,7 +77,7 @@ nav a:hover {
 .hero p {
   text-align: left;
   margin: 1rem 0;
-  max-width: 1000px;
+  max-width: 1200px;
   font-size: 1.2rem;
   font-weight: bold;
   color: #ccc;
@@ -165,6 +165,9 @@ footer {
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 /* Hamburger Menu */
@@ -364,12 +367,12 @@ footer {
   padding: 2.5rem 2.5rem 2rem 2.5rem;
   color: #fff;
   box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .work-title h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0 0 0.5rem 0;
   font-weight: bold;
 }
@@ -405,4 +408,111 @@ footer {
   .work-title h3 {
     font-size: 1.5rem;
   }
+}
+/* Resume Section Layout */
+.resume-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 3rem;
+  background: #393b44;
+  border-radius: 2rem;
+  padding: 3rem 2rem 2.5rem 2rem;
+  max-width: 1100px;
+  margin: 3rem auto 2rem auto;
+  color: #fff;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+}
+
+.resume-content {
+  flex: 2;
+  min-width: 260px;
+  text-align: left;
+}
+
+.resume-content h2{
+  color: white;
+  text-shadow: none;
+  font-size:2.5rem; 
+  margin-bottom:1.5rem;
+}
+
+.resume-content p{
+  text-align: left;
+  margin: 1rem 0;
+  max-width: 1200px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.resume-photo {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.resume-photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #23283a;
+  background: #23283a;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+}
+
+.resume-downloads {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resume-downloads a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #b0b8d1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.resume-downloads a:hover {
+  color: #fff;
+}
+
+.resume-downloads i {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 900px) {
+  .resume-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem 0.7rem;
+  }
+  .resume-photo {
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  .resume-photo img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
