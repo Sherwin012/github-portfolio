@@ -12,4 +12,4 @@ Built with **HTML, CSS, and JavaScript** and hosted on **GitHub Pages**.
 ##  ⁇  Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/game-dev-portfolio.git
+   git clone https://github.com/Sherwin012/github-portfolio.git
